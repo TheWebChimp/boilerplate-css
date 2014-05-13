@@ -6,20 +6,12 @@
 
 .inner {
 
-	max-width: 95%;
-}
-
-.row {
-
 	max-width: 100%;
-	margin-bottom: 15px;
+	margin: 0 auto;
 }
 
 .row .col {
 
-	border: 0px solid rgba(0,0,0,0);
-	margin-bottom: 5px;
-	max-width: 100%;
 	/* box-sizing */
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
@@ -53,19 +45,16 @@
 	.row {
 
 		margin-left: -15px;
+		margin-right: -15px;
 	}
 
 	.row .col {
 
 		float: left;
-		border-left-width: 15px;
-		padding: 0 0px;
-		margin-bottom: 0;
-	}
-
-	.row .col .row {
-
-		margin: 0 15px 15px 0;
+		position: relative;
+		min-height: 1px;
+		padding-left: 15px;
+		padding-right: 15px;
 	}
 
 	.row .col.col-1  { width: 8.33333333333%; }
@@ -126,6 +115,7 @@
 	background: #DDD;
 	text-align: center;
 	color: #666;
+	border: 1px solid #CCCCCC;
 }
 
 .row.shaded .col span {
