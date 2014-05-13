@@ -34,6 +34,7 @@
 
 	.inner {
 
+		width: 1000px;
 		max-width: none;
 	}
 
@@ -43,22 +44,28 @@
 		display: table;
 		content: "";
 	}
+
 	.row:after {
 
 		clear: both;
 	}
 
+	.row {
+
+		margin-left: -15px;
+	}
+
 	.row .col {
 
-		margin-left: 0%;
-		padding: 0 15px;
 		float: left;
+		border-left-width: 15px;
+		padding: 0 0px;
 		margin-bottom: 0;
 	}
 
-	.row .col:first-child {
+	.row .col .row {
 
-		margin-left: 0;
+		margin: 0 15px 15px 0;
 	}
 
 	.row .col.col-1  { width: 8.33333333333%; }
